@@ -10,17 +10,33 @@ function addToCollection(albumTitle, albumArtist, yearPublished) {
     title:  albumTitle,
     artist: albumArtist,
     year: yearPublished,
-  };
+  }
 // adding the album to variable collection
   collection.push(album);
   return album;
 }
 
-// testing the function
-console.log(addToCollection('Que Huong Toi', 'Manh Quynh', '1996'));
-console.log(addToCollection('Me', 'Manh Quynh', '1996'));
-console.log(addToCollection('Anh Ba Khia', 'Phi Nhung', '1998'));
+console.log('TESTING THE FUNCTION');
+// testing the function to see if it works
+console.log(addToCollection('Quê Hương Tôi', 'Manh Quynh', '1996'));
+console.log(addToCollection('Mẹ Tôi', 'Manh Quynh', '1996'));
+console.log(addToCollection('Anh Ba Khía', 'Phi Nhung', '1998'));
 console.log(addToCollection('Who Let the Dogs Out', 'Baha Men', '2000'));
 console.log(addToCollection('Because I Got High', 'Afroman', '2000'));
 console.log(addToCollection('What is Love', 'Clean Bandit', '2018'));
 console.log(collection);
+
+console.log('Showing the album Collection');
+// creating the function to show the collection
+function showCollection(array) {
+// Here you are looping through the array which is the collection
+  for (let i = 0; i < array.length; i++) {
+//console.log the information
+    console.log(
+      `Album Title: ${array[i].title} by ${array[i].artist}, published in ${array[i].year}.`
+    );
+  }
+}
+
+// Testing the showCollection unction
+showCollection(collection);
