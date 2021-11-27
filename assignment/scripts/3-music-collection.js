@@ -40,3 +40,9 @@ function showCollection(array) {
 
 // Testing the showCollection unction
 showCollection(collection);
+
+// create a function to find artist in Collection
+function findByArtist(value, array) {
+
+  }
+}
