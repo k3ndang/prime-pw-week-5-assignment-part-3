@@ -18,4 +18,9 @@ function addToCollection(albumTitle, albumArtist, yearPublished) {
 
 // testing the function
 console.log(addToCollection('Que Huong Toi', 'Manh Quynh', '1996'));
+console.log(addToCollection('Me', 'Manh Quynh', '1996'));
+console.log(addToCollection('Anh Ba Khia', 'Phi Nhung', '1998'));
+console.log(addToCollection('Who Let the Dogs Out', 'Baha Men', '2000'));
+console.log(addToCollection('Because I Got High', 'Afroman', '2000'));
+console.log(addToCollection('What is Love', 'Clean Bandit', '2018'));
 console.log(collection);
