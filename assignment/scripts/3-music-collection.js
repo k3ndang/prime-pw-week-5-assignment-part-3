@@ -26,7 +26,7 @@ console.log(addToCollection('Because I Got High', 'Afroman', '2000'));
 console.log(addToCollection('What is Love', 'Clean Bandit', '2018'));
 console.log(collection);
 
-console.log('Showing the album Collection');
+console.log('SHOWING THE ALBUM COLLECTION');
 // creating the function to show the collection
 function showCollection(array) {
 // Here you are looping through the array which is the collection
@@ -42,7 +42,18 @@ function showCollection(array) {
 showCollection(collection);
 
 // create a function to find artist in Collection
-function findByArtist(value, array) {
-
-  }
+function findByArtist(artist) {
+    let result = [];
+    for (let i = 0; i < collection.length; i++) {
+        if(collection[i].artist === artist) {
+            result.push(collection[i]);
+      }
+    }
+        return {result};
 }
+
+console.log('FIND BY ARTIST');
+
+// testing the function of findByArtist
+console.log(findByArtist('Manh Quynh'));
+console.log(findByArtist('Afroman'));
