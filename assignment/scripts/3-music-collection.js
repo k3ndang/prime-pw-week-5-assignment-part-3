@@ -49,7 +49,7 @@ function findByArtist(artist) {
             result.push(collection[i]);
       }
     }
-        return {result};
+        return result;
 }
 
 console.log('FIND BY ARTIST');
